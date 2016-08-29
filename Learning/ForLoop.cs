@@ -8,11 +8,9 @@ namespace Learning
 {
     public class ForLoop
     {
-      
-
         public void examplefor()
         {
-            Console.WriteLine("Enter your name");
+            Console.WriteLine("Enter your name and age");
             string input = Console.ReadLine();
             for(int i =0; i<= 10; i++)
             {
