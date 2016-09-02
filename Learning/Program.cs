@@ -223,10 +223,12 @@ namespace Learning
             //s.commonchar();
             //DistanceBetweenTwoWords d = new DistanceBetweenTwoWords();
             //d.distancewords();
-            RepeatedSubStringInString r = new RepeatedSubStringInString();
-            r.repeatedstring();
+            //RepeatedSubStringInString r = new RepeatedSubStringInString();
+            //r.repeatedstring();
             //ShowUncommonCharCountOfRepeatedChar s = new ShowUncommonCharCountOfRepeatedChar();
             //s.othermethod();
+            Palindrome p = new Palindrome();
+            p.palindromefornum();
             System.Console.ReadLine();
         }
 

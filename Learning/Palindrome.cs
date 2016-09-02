@@ -34,5 +34,28 @@ namespace Learning
             }
             
         }
+
+        public void palindromefornum()
+        {
+            Console.WriteLine("Enter integer number");
+            int input = Convert.ToInt32(Console.ReadLine());
+            int rem = 0;
+            int n = input;
+            while (input > 0)
+            {
+                rem = rem * 10 + input % 10;
+                input /= 10;
+            }
+
+            if(n == rem)
+            {
+                Console.WriteLine("Given number is palindrome");
+            }
+
+            else
+            {
+                Console.WriteLine("Given number is not palindrome");
+            }
+        }
     }
 }
