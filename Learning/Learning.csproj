@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmazonFindMissingNumberFromSquence.cs" />
     <Compile Include="Anagram.cs" />
     <Compile Include="BreakString.cs" />
     <Compile Include="CountOfCommonCharactersIn3Strings.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="SelectionSort.cs" />
     <Compile Include="ShowUncommonCharCountOfRepeatedChar.cs" />
     <Compile Include="stringtoint.cs" />
+    <Compile Include="SumOfIndices.cs" />
     <Compile Include="SumOfTwoNumbers.cs" />
     <Compile Include="SumOfTwoNumbersInArray.cs" />
     <Compile Include="Switch.cs" />

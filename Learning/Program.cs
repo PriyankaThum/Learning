@@ -10,8 +10,9 @@ namespace Learning
     class Program
     {
         static void Main(string[] args)
+
         {
-            //Console.WriteLine(args[0]);
+            Console.WriteLine(args[0]);
             //reverse a string
             //string Str, Revstr = " ";
             //int Length;
@@ -163,7 +164,7 @@ namespace Learning
             //b.display();
             //int[] list = new int[] {7, 4 , 1, 2, 5 };
             //QuickSort q = new QuickSort();
-            //q.quick(list, 0, 7);
+            //q.quick(list, 0, list.Length-1);
             //q.display(list);
             //ListSample m = new ListSample();
             //m.sample();
@@ -191,7 +192,7 @@ namespace Learning
             //c.centerchar();
             //TranslateFromNoToAlphabet t = new TranslateFromNoToAlphabet();
             //t.translate();
-            //int[] dataarray = new int[] { 1, 2, 3, 4, 5 };
+            int[] dataarray = new int[] { 10, 3, 1, 4, 2, 5 };
             //MyStackArray m = new MyStackArray(dataarray);
             //m.Pop();
             //m.Pop();
@@ -227,8 +228,12 @@ namespace Learning
             //r.repeatedstring();
             //ShowUncommonCharCountOfRepeatedChar s = new ShowUncommonCharCountOfRepeatedChar();
             //s.othermethod();
-            Palindrome p = new Palindrome();
-            p.palindromefornum();
+            //Palindrome p = new Palindrome();
+            //p.palindromefornum();
+            //AmazonFindMissingNumberFromSquence a = new AmazonFindMissingNumberFromSquence();
+            //a.missingnumber(dataarray);
+            SumOfIndices s = new SumOfIndices();
+            s.maxsumofindices(dataarray);
             System.Console.ReadLine();
         }
 
