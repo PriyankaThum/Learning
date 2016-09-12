@@ -43,19 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmazonFindMaxDimensionForGivenNum.cs" />
     <Compile Include="AmazonFindMissingNumberFromSquence.cs" />
     <Compile Include="Anagram.cs" />
     <Compile Include="BreakString.cs" />
     <Compile Include="CountOfCommonCharactersIn3Strings.cs" />
     <Compile Include="DecimalToRoman.cs" />
     <Compile Include="DistanceBetweenTwoWords.cs" />
+    <Compile Include="AmazonFindRepeatationOfNumberInList.cs" />
+    <Compile Include="FirstOccuranceOfCharOfS2InS1.cs" />
     <Compile Include="ImplementationOfStackUsingArray.cs" />
     <Compile Include="IMyQueue.cs" />
     <Compile Include="IMyStack.cs" />
     <Compile Include="Listsample.cs" />
     <Compile Include="BubbleSort.cs" />
     <Compile Include="CenterCharacterOfArray.cs" />
-    <Compile Include="DeleteUniqueChar.cs" />
+    <Compile Include="RemoveDuplicates.cs" />
     <Compile Include="DoWhile.cs" />
     <Compile Include="FibonacciSeries.cs" />
     <Compile Include="ForLoop.cs" />
@@ -72,7 +75,6 @@
     <Compile Include="MyLinkedList.cs" />
     <Compile Include="MyQueueArray.cs" />
     <Compile Include="MyStackArray.cs" />
-    <Compile Include="MyStackArray1.cs" />
     <Compile Include="MyStackList.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Palindrome.cs" />
@@ -81,7 +83,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Questionnaire.cs" />
     <Compile Include="QuickSort.cs" />
-    <Compile Include="RemoveDupicatesFromUnsortedList.cs" />
     <Compile Include="RepeatedSubStringInString.cs" />
     <Compile Include="Replacespaces.cs" />
     <Compile Include="Reverse.cs" />

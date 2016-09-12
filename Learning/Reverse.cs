@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Learning
 {
-    class Reverse
+    public class Reverse
     {
         public void reversestring()
         {

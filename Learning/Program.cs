@@ -12,7 +12,7 @@ namespace Learning
         static void Main(string[] args)
 
         {
-            Console.WriteLine(args[0]);
+            //Console.WriteLine(args[0]);
             //reverse a string
             //string Str, Revstr = " ";
             //int Length;
@@ -192,7 +192,7 @@ namespace Learning
             //c.centerchar();
             //TranslateFromNoToAlphabet t = new TranslateFromNoToAlphabet();
             //t.translate();
-            int[] dataarray = new int[] { 10, 3, 1, 4, 2, 5 };
+            //int[] dataarray = new int[] { 10, 3, 1, 4, 2, 5, 11 };
             //MyStackArray m = new MyStackArray(dataarray);
             //m.Pop();
             //m.Pop();
@@ -232,9 +232,17 @@ namespace Learning
             //p.palindromefornum();
             //AmazonFindMissingNumberFromSquence a = new AmazonFindMissingNumberFromSquence();
             //a.missingnumber(dataarray);
-            SumOfIndices s = new SumOfIndices();
-            s.maxsumofindices(dataarray);
-            System.Console.ReadLine();
+            //SumOfIndices s = new SumOfIndices();
+            //s.maxsumofindices(dataarray);
+            //AmazonFindRepeatationOfNumberInList a = new AmazonFindRepeatationOfNumberInList();
+            //a.numlist(dataarray);
+            //RemoveDuplicateChars r = new RemoveDuplicateChars();
+            //r.RemoveDuplicates();
+            //FirstOccuranceOfCharOfS2InS1 f = new FirstOccuranceOfCharOfS2InS1();
+            //f.firstOccurance();
+            AmazonFindMaxDimensionForGivenNum x = new AmazonFindMaxDimensionForGivenNum();
+            x.maxdimension();
+            Console.ReadLine();
         }
 
         //public static void DisplayTV(TV d)
