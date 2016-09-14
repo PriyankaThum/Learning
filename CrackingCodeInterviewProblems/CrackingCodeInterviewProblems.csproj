@@ -43,11 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chap1Prob4.cs" />
-    <Compile Include="Chap1Prob5.cs" />
+    <Compile Include="Chap1Problem4.cs" />
+    <Compile Include="Chap1Problem5.cs" />
     <Compile Include="Chap1Problem1.cs" />
     <Compile Include="Chap1Problem2.cs" />
     <Compile Include="Chap1Problem3.cs" />
+    <Compile Include="Chap1Problem6.cs" />
+    <Compile Include="Chap1Problem7.cs" />
+    <Compile Include="Chap1Problem8.cs" />
+    <Compile Include="Chap2Problem1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

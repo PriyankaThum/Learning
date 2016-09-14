@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Learning
 {
-    class Anagram
+    public class Anagram
     {
         public void anagramexp()
         {

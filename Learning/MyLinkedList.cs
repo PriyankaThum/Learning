@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Learning
 {
-    class MyLinkedList
+    public class MyLinkedList
     {
         private Node head;
 
