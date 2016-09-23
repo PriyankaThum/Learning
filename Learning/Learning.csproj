@@ -45,12 +45,16 @@
   <ItemGroup>
     <Compile Include="AmazonFindMaxDimensionForGivenNum.cs" />
     <Compile Include="AmazonFindMissingNumberFromSquence.cs" />
+    <Compile Include="AmazonFindtheMaxTimesOccuredChar.cs" />
+    <Compile Include="AmazonMergingTwoLists.cs" />
     <Compile Include="Anagram.cs" />
     <Compile Include="BreakString.cs" />
+    <Compile Include="CExampleProb.cs" />
     <Compile Include="CountOfCommonCharactersIn3Strings.cs" />
     <Compile Include="DecimalToRoman.cs" />
     <Compile Include="DistanceBetweenTwoWords.cs" />
     <Compile Include="AmazonFindRepeatationOfNumberInList.cs" />
+    <Compile Include="FindGreatestNoOnRightSideOfEachElement.cs" />
     <Compile Include="FirstOccuranceOfCharOfS2InS1.cs" />
     <Compile Include="ImplementationOfStackUsingArray.cs" />
     <Compile Include="IMyQueue.cs" />
@@ -58,6 +62,7 @@
     <Compile Include="Listsample.cs" />
     <Compile Include="BubbleSort.cs" />
     <Compile Include="CenterCharacterOfArray.cs" />
+    <Compile Include="PrintAllTheCharactetersOfstringInReverse.cs" />
     <Compile Include="RemoveDuplicates.cs" />
     <Compile Include="DoWhile.cs" />
     <Compile Include="FibonacciSeries.cs" />

@@ -52,6 +52,7 @@
     <Compile Include="Chap1Problem7.cs" />
     <Compile Include="Chap1Problem8.cs" />
     <Compile Include="Chap2Problem1.cs" />
+    <Compile Include="NODE.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

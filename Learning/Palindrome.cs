@@ -59,7 +59,7 @@ namespace Learning
         }
 
 
-        public bool palin(string input)
+        public string palin(string input)
         {
             
             char[] c = input.ToCharArray();
@@ -74,43 +74,37 @@ namespace Learning
                 else
                 {
                     flag = false;
-                    Console.WriteLine("Not a Palindrome");
+                    input = "false";
                     break;
                 }
             }
-            if (flag == true)
-            {
-                Console.WriteLine("Palindrome");
-            }
-            return flag;
+            return input;
         }
 
         public void longestpalindrome()
         {
             Console.WriteLine("Enter a string");
             string input = Console.ReadLine();
-            Dictionary<string, int> d = new Dictionary<string, int>();
+            Dictionary<int, string> d = new Dictionary<int, string>();
+            int temp = 0;
             string[] words = input.Split(new char[] { ' ' });
             foreach (var word in words)
             {
-                if(palin(word))
+                if (palin(word) != "false")
                 {
-                    d.Add(word, word.Length);
+                    d.Add(word.Length, word);
                 }
+
             }
-            for (int i = 0; i < d.Count; i++)
+            foreach (var item in d)
             {
-                int x = d.Values.ElementAt(i);
-                int q = 0;
-                if (x > d.Values.ElementAt(i+1))
+                if (item.Key > temp)
                 {
-                    i++;
-                }
-                if(i == d.Count)
-                {
+                    temp = item.Key;
                 }
             }
             
+            Console.WriteLine(d[temp] + " is the longest Palindrome in the string");
         }
     }
 }

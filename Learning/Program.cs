@@ -224,8 +224,8 @@ namespace Learning
             //s.commonchar();
             //DistanceBetweenTwoWords d = new DistanceBetweenTwoWords();
             //d.distancewords();
-            RepeatedSubStringInString r = new RepeatedSubStringInString();
-            r.repeatedstring();
+            //RepeatedSubStringInString r = new RepeatedSubStringInString();
+            //r.repeatedstring();
             //ShowUncommonCharCountOfRepeatedChar s = new ShowUncommonCharCountOfRepeatedChar();
             //s.othermethod();
             //Palindrome p = new Palindrome();
@@ -242,6 +242,25 @@ namespace Learning
             //f.firstOccurance();
             //AmazonFindMaxDimensionForGivenNum x = new AmazonFindMaxDimensionForGivenNum();
             //x.maxdimension();
+            //PrintAllTheCharactetersOfstringInReverse s = new PrintAllTheCharactetersOfstringInReverse();
+            //s.charInRev();
+            //Palindrome p = new Palindrome();
+            //p.longestpalindrome();
+            //int[] list = new int[] { 1, 4, 2, 5, 7 };
+            //Reverse r = new Reverse();
+            //r.reverseAtKPosition(list);
+            //FindGreatestNoOnRightSideOfEachElement f = new FindGreatestNoOnRightSideOfEachElement();
+            //f.findgreatest(list);
+            //CExampleProb c = new CExampleProb();
+            //c.ex1();
+            //c.ex2();
+            //c.ex3();
+            //c.ex4();
+            //c.ex7();
+            //AmazonMergingTwoLists f = new AmazonMergingTwoLists();
+            //f.mergelist();
+            AmazonFindtheMaxTimesOccuredChar a = new AmazonFindtheMaxTimesOccuredChar();
+            a.charofmax();
             Console.ReadLine();
         }
 

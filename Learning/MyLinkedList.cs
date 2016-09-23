@@ -9,7 +9,6 @@ namespace Learning
     public class MyLinkedList
     {
         private Node head;
-
         public MyLinkedList()
         {
             this.head = null;

@@ -35,6 +35,7 @@ namespace Learning
                 this.dataArray = new int[DEFAULT_SIZE];
             }
         }
+
         public int Dequeue()
         {
             if (!IsEmpty())
