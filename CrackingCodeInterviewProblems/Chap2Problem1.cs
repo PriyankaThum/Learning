@@ -42,6 +42,8 @@ namespace CrackingCodeInterviewProblems
             }
         }
 
+
+
         public Chap2Problem1(NODE head)
         {
             if (head == null)
@@ -105,15 +107,23 @@ namespace CrackingCodeInterviewProblems
 
         }
 
-        public void insertlast(int newdata)
+        public NODE insertlast(int newdata)
         {
             NODE node = new NODE() { data = newdata, next = null };
             NODE current = head;
-            while (current.next != null)
+            if (head == null)
             {
-                current = current.next;
+                this.head = node;
             }
-            current.next = node;
+            else
+            {
+                while (current.next != null)
+                {
+                    current = current.next;
+                }
+                current.next = node;
+            }
+            return node;
         }
 
         public void insertafter(int newdata, int after)
@@ -350,22 +360,80 @@ namespace CrackingCodeInterviewProblems
         //Input: (3 -> 1 -> 5) + (5 -> 9 -> 2)
         //Output: 8 -> 0 -> 8
 
-        public void prob4AddTwoLInkedList(NODE first, NODE second)
+        public Chap2Problem1 prob4AddTwoLInkedList(NODE first, NODE second)
         {
-            NODE newlinkedlist = new NODE();
+
+            Chap2Problem1 newlist = new Chap2Problem1();
+            NODE p = newlist.head;
+            NODE p1 = first;
+            NODE p2 = second;
             int temp = 0;
-            while (first != null || second != null)
+            while (p1 != null || p2 != null)
             {
-                newlinkedlist.data = first.data + second.data + temp;
-                temp = 0;
-                if (newlinkedlist.data > 9)
+                p = newlist.insertlast(p1.data + p2.data + temp);
+                if (p.data > 9)
                 {
-                    newlinkedlist.data = newlinkedlist.data / 10;
+                    temp = 0;
+                    p.data = p.data % 10;
                     temp++;
                 }
-                first = first.next;
-                second = second.next;
+                p = p.next;
+                p1 = p1.next;
+                p2 = p2.next;
             }
+            return newlist;
+        }
+
+
+        //Given a circular linked list, implement an algorithm which returns node at the beginning of the loop.
+        //DEFINITION
+        //Circular linked list: A (corrupt) linked list in which a node’s next pointer points to an earlier node, so as to make a loop in the linked list.
+        //EXAMPLE
+        //input: A -> B -> C -> D -> E -> C[the same C as earlier]
+        //output: C
+        public NODE StartOfLoop()
+        {
+            NODE p1 = this.head;
+            NODE p2 = this.head;
+            NODE temp = new NODE();
+            bool flag = false;
+            bool flag1 = false;
+            int i = 0;
+            while (p1 != null)
+            {
+                if (p1 == p2 && i > 0)
+                {
+                    if (flag == false)
+                    {
+                        p1 = this.head;
+                        flag1 = true;
+                        flag = true;
+                    }
+                    else
+                    {
+                        temp = p1;
+                        temp.next = null;
+                        return temp;
+                    }
+                }
+                if (p1==p2)
+                {
+                    i++;
+                }
+                
+                if (flag1 == true)
+                {
+                    p1 = p1.next;
+                    p2 = p2.next;
+                }
+                else
+                {
+                    p1 = p1.next;
+                    p2 = p2.next.next;
+                }
+            }
+
+            return temp;
         }
 
         public void append(NODE a, NODE b)
@@ -447,35 +515,7 @@ namespace CrackingCodeInterviewProblems
 
         public NODE odd()
         {
-            //int length = this.GetListLength();
             head = head.next;
-            //NODE p1 = this.head;
-            //NODE p2 = p1.next;
-            //NODE p3 = p2.next;
-            //while (p3.next != null)
-            //{
-            //    p1.next = p2.next;
-            //    p2.next = null;
-            //    p1 = p3;
-            //    p2 = p1.next;
-            //    if (p2.next != null)
-            //    {
-            //        p3 = p2.next;
-            //    }
-            //    else
-            //    {
-            //        p3 = p2;
-            //    }
-            //}
-            //if (length % 2 == 0)
-            //{
-            //    p1.next = null;
-            //}
-            //else
-            //{
-            //    p1.next = p2.next;
-            //    p2.next = null;
-            //}
             return even();
         }
 
@@ -578,9 +618,47 @@ namespace CrackingCodeInterviewProblems
             return a;
         }
 
+        public NODE MakingCircularList()
+        {
+            NODE current = this.head;
+            while (current.next != null)
+            {
+                current = current.next;
+            }
+            current.next = this.head;
+            return this.head;
+        }
 
+        public bool iscircular()
+        {
+            NODE p = this.head;
+            NODE current = p.next;
+            bool flag = false;
+            while (current != null)
+            {
+                if (current == p)
+                {
+                    flag = true;
+                    return true;
+                }
+                current = current.next;
+            }
+            return flag;
+        }
 
-        
+        public NODE MakingCircularListInMiddle(int value)
+        {
+            NODE current = this.head;
+            NODE p = new NODE();
+            while (current.next != null)
+            {
+                if (current.data == value)
+                    p = current;
+                current = current.next;
+            }
+            current.next = p;
+            return this.head;
+        }
     }
 }
 
