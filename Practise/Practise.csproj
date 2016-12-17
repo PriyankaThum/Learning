@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5FA682FD-D415-45FE-AB3C-836448A4919A}</ProjectGuid>
+    <ProjectGuid>{8816A5CC-F142-4D05-B89C-73C94179EFE3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CrackingCodeInterviewProblems</RootNamespace>
-    <AssemblyName>CrackingCodeInterviewProblems</AssemblyName>
+    <RootNamespace>Practise</RootNamespace>
+    <AssemblyName>Practise</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,8 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,30 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chap1Problem4.cs" />
-    <Compile Include="Chap1Problem5.cs" />
-    <Compile Include="Chap1Problem1.cs" />
-    <Compile Include="Chap1Problem2.cs" />
-    <Compile Include="Chap1Problem3.cs" />
-    <Compile Include="Chap1Problem6.cs" />
-    <Compile Include="Chap1Problem7.cs" />
-    <Compile Include="Chap1Problem8.cs" />
-    <Compile Include="Chap2Problem1.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="MyAmazonPhnInterviewQue.cs" />
-    <Compile Include="NODE.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="GuessTheNumberGame.cs" />
+    <Compile Include="How toArrangeStringInAscendingOrder.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="FindStringIsPermutationOfSamallStrings.cs" />
+    <Compile Include="PractiseProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StackArray.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="TemperatureConversions.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Learning\Learning.csproj">
-      <Project>{28581bd7-0610-44ff-bf6d-bd7d19fb591e}</Project>
-      <Name>Learning</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

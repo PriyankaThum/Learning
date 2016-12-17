@@ -259,9 +259,46 @@ namespace Learning
             //c.ex7();
             //AmazonMergingTwoLists f = new AmazonMergingTwoLists();
             //f.mergelist();
-            AmazonFindtheMaxTimesOccuredChar a = new AmazonFindtheMaxTimesOccuredChar();
-            a.charofmax();
-            Console.ReadLine();
+            //AmazonFindtheMaxTimesOccuredChar a = new AmazonFindtheMaxTimesOccuredChar();
+            //a.charofmax();
+            //int[] list = new int[] { 1, 2, 1};
+            //MyLinkedList m = new MyLinkedList(list);
+            //m.Count(m, 2);
+            //m.GetNth(m, 3);
+            //m.Search(3);
+            //m.DeleteList(m);
+            //string s = "aab";
+            string s = "abcd";
+            string t = "abcde";
+            MaxSumOfTwoIntegersFromArray a = new MaxSumOfTwoIntegersFromArray();
+            a.FindTheDifference(s,t);
+            //a.LengthOfLongestSubstring(s);
+            //a.sumof();
+            //a.ThreeSum(list);
+            Program p = new Program();
+            TreeNode root = p.TreeConst();
+            TreeList treelist = new TreeList();
+            treelist.Findpath(root, "XYZ");
+        Console.ReadLine();
+        }
+
+        public TreeNode TreeConst()
+        {
+            TreeNode root = new TreeNode { name = "Thum" };
+            TreeNode child1 = new TreeNode { name = "ABC"};
+            TreeNode child2 = new TreeNode { name = "DEF"};
+            TreeNode child11 = new TreeNode { name = "LMN"};
+            TreeNode child12 = new TreeNode { name = "RST"};
+            TreeNode child23 = new TreeNode { name = "GHI"};
+            TreeNode child22 = new TreeNode { name = "OPQ"};
+            TreeNode child221 = new TreeNode { name = "UVW"};
+            TreeNode child222 = new TreeNode { name = "XYZ"};
+
+            child22.Employees = new List<TreeNode> { child221, child222 };
+            child1.Employees = new List<TreeNode>() { child11, child12 };
+            child2.Employees = new List<TreeNode>() { child22, child23 };
+            root.Employees = new List<TreeNode>() { child1, child2 };
+            return root;
         }
 
         //public static void DisplayTV(TV d)

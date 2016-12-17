@@ -62,12 +62,10 @@
     <Compile Include="Listsample.cs" />
     <Compile Include="BubbleSort.cs" />
     <Compile Include="CenterCharacterOfArray.cs" />
+    <Compile Include="MaxSumOfTwoIntegersFromArray.cs" />
     <Compile Include="PrintAllTheCharactetersOfstringInReverse.cs" />
     <Compile Include="RemoveDuplicates.cs" />
-    <Compile Include="DoWhile.cs" />
     <Compile Include="FibonacciSeries.cs" />
-    <Compile Include="ForLoop.cs" />
-    <Compile Include="IfElse.cs" />
     <Compile Include="ImplementationOfQueueUsingArray.cs" />
     <Compile Include="Inheritance.cs" />
     <Compile Include="InheritanceDerivedClass.cs" />
@@ -100,6 +98,8 @@
     <Compile Include="SumOfTwoNumbersInArray.cs" />
     <Compile Include="Switch.cs" />
     <Compile Include="TranslateFromNoToAlphabet.cs" />
+    <Compile Include="TreeList.cs" />
+    <Compile Include="TreeNode.cs" />
     <Compile Include="TryCatch.cs" />
     <Compile Include="UniqueString.cs" />
     <Compile Include="WhileLoop.cs" />

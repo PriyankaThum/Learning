@@ -193,5 +193,48 @@ namespace Learning
                 current = current.next;
             }
         }
+        
+        //Linked list prb 1 write a function that count the no. of times a given int occurs in the list.
+        public int Count(MyLinkedList list, int value)
+        {
+            Node current = this.head;
+            int i = 0;
+            while (current != null)
+            {
+                if (current.value == value)
+                {
+                    i++;
+                }
+                current = current.next;
+            }
+            return i;
+        }
+
+        // Linked list prb 2 write function that takes the list and the interger index and returns the data value stored 
+        //in the node at that index position.
+
+        public int GetNth(MyLinkedList list, int position)
+        {
+            Node current = this.head;
+            int i = 1;
+            while (i < position)
+            {
+                current = current.next;
+                i++;
+            }
+            return current.value;
+        }
+
+        // Linked list prb 3 write a function that takes a list and deallocates all its memory and sets its head pointer to NULL.
+
+        public void DeleteList(MyLinkedList list)
+        {
+            Node current = this.head;
+            int len = GetListLength();
+            
+            
+
+            
+        }
     }
 }
